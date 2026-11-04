@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice - Grace Wambui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model Practice</h1>
+        <p>Learning the four parts of the CSS box model.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Exercise 1: Box Model Visualization</h2>
+
+            <div class="box">
+                <div class="box-content">Content Area</div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">Second Box</div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">Third Box</div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">Fourth Box</div>
+            </div>
+
+            <p>
+                Content is the main area. Padding creates
+                space around the content, border surrounds
+                the padding, and margin creates space
+                outside the border.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Exercise 2: Debug the Layout</h2>
+
+            <p>
+                The original box was wider than 300px because
+                padding was added to its width.
+            </p>
+
+            <div class="broken-box">
+                This box has a total width of 300px.
+            </div>
+
+            <p>
+                I fixed the problem using box-sizing: border-box.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Exercise 3: Card Component</h2>
+
+            <div class="card">
+
+                <img
+                    src="https://placehold.co/260x150"
+                    width="260"
+                    height="150">
+
+                <h3>My First Project</h3>
+
+                <p>
+                    This is a simple project card created
+                    using HTML and CSS. I am learning how
+                    padding, margins, borders and widths
+                    organize webpage content.
+                </p>
+
+                <button type="button">Learn More</button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Grace Wambui</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,1870 @@
+
+/* 1. Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* 3. Base typography and colors */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f5f5f5;
+}
+
+/* 4. Heading styles */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1e40af;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+
+/* TASK 3.2: BOX MODEL PRACTICE */
+
+/* Exercise 1: Box Model Visualization */
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid blue;
+    margin: 20px;
+    width: 200px;
+}
+
+.box-content {
+    background-color: lightyellow;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Exercise 2: Fix the Box Width */
+.broken-box {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    margin-bottom: 20px;
+}
+
+/* Exercise 3: Card Component */
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* TASK 3.3: TYPOGRAPHY SYSTEM */
+
+/* Font size variables */
+:root {
+    --font-xs: 0.75rem;    /* 12px */
+    --font-sm: 0.875rem;   /* 14px */
+    --font-base: 1rem;     /* 16px */
+    --font-lg: 1.125rem;   /* 18px */
+    --font-xl: 1.25rem;    /* 20px */
+    --font-2xl: 1.5rem;    /* 24px */
+    --font-3xl: 1.875rem;  /* 30px */
+    --font-4xl: 2.25rem;   /* 36px */
+}
+
+/* Body typography */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Heading typography */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-4xl);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-3xl);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-2xl);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-xl);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-lg);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-base);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Small text */
+small,
+.small-text {
+    font-size: var(--font-sm);
+}
+
+/* Paragraphs */
+p {
+    font-size: var(--font-base);
+    margin-bottom: 15px;
+}
+
+
+/* TASK 3.4: COLOR SCHEME */
+
+:root {
+    /* Main colors */
+    --color-primary: #1E3A8A;
+    --color-secondary: #FACC15;
+    --color-background: #F8FAFC;
+    --color-text: #1F2937;
+    --color-muted: #9CA3AF;
+
+    /* Primary color variations */
+    --color-primary-light: #DBEAFE;
+    --color-primary-dark: #172554;
+}
+
+/* Body colors */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Heading colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-primary);
+}
+
+/* Paragraph colors */
+p {
+    color: var(--color-text);
+}
+
+/* Link colors */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: var(--color-secondary);
+}
+
+/* Button colors */
+button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Section backgrounds */
+section {
+    background-color: var(--color-background);
+}
+
+/* Muted text */
+small,
+.small-text {
+    color: var(--color-muted);
+}
+
+/* Card backgrounds */
+.card {
+    background-color: white;
+    border: 1px solid var(--color-muted);
+}
+
+/* Highlight backgrounds */
+.highlight {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+
+
+/* LESSON 4 - TASK 4.1: FLEXBOX */
+
+/* Exercise 1: Navigation Bar */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primary);
+}
+
+.logo {
+    color: white;
+    font-size: var(--font-xl);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+    color: var(--color-secondary);
+}
+
+/* Exercise 2: Card Row */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-card {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--color-muted);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.flex-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.flex-card h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flex-card p {
+    flex-grow: 1;
+}
+
+/* Exercise 3: Footer */
+.site-footer {
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-container section {
+    flex: 1;
+}
+
+.site-footer h3 {
+    color: white;
+}
+
+.site-footer a {
+    color: white;
+}
+
+.site-footer ul {
+    list-style: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--color-muted);
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
+/* LESSON 4 - TASK 4.2: CSS GRID */
+
+/* Exercise 1: Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Exercise 2: Magazine Layout */
+.magazine-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.magazine-header {
+    grid-column: 1 / 3;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.magazine-sidebar {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background-color: var(--color-primary-light);
+    padding: 20px;
+}
+
+.magazine-content {
+    grid-column: 2;
+    background-color: white;
+    border: 1px solid var(--color-muted);
+    padding: 20px;
+}
+
+.magazine-footer {
+    grid-column: 1 / 3;
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Exercise 3: Responsive Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid var(--color-muted);
+    border-radius: 8px;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.grid-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.grid-card p {
+    flex-grow: 1;
+}
+
+/* Tablet: Two columns */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: One column */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .magazine-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .magazine-header,
+    .magazine-sidebar,
+    .magazine-content,
+    .magazine-footer {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+
+/* =========================
+   1. GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   2. MOBILE NAVIGATION
+========================= */
+
+header {
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+/* CSS-only hamburger menu */
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    z-index: 10;
+}
+
+/* =========================
+   3. HOME PAGE
+========================= */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* =========================
+   4. PROJECTS PAGE
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.project-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   5. CONTACT PAGE
+========================= */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-sidebar {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* =========================
+   6. TABLET: 768px
+========================= */
+
+@media (min-width: 768px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 50%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .contact-form {
+        flex: 2;
+    }
+
+    .contact-sidebar {
+        flex: 1;
+    }
+}
+
+/* =========================
+   7. DESKTOP: 1024px
+========================= */
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 85%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        gap: 50px;
+        padding: 80px 0;
+    }
+
+    .contact-form button {
+        width: auto;
+    }
+}
+
+/* =========================
+   8. LARGE DESKTOP: 1280px
+========================= */
+
+@media (min-width: 1280px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .projects-grid {
+        gap: 30px;
+    }
+}
+
+
+/* BUTTON HOVER EFFECTS */
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* LINK HOVER EFFECTS */
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* PROJECT CARD HOVER EFFECTS */
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* SMOOTH TRANSITIONS */
+
+.button,
+.card,
+a,
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+/* ACCESSIBILITY FOCUS STATES */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* FORM FOCUS EFFECTS */
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* RESPONSIVE IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* PROJECT IMAGES */
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* DESIGN VARIABLES */
+
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #333333;
+    --color-background: #f8f9fa;
+    --color-white: #ffffff;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    --border-radius: 10px;
+}
+
+/* CONSISTENT SECTION SPACING */
+
+section {
+    padding: var(--spacing-large) 0;
+}
+
+/* CONSISTENT HEADINGS */
+
+h1, h2, h3 {
+    margin-bottom: var(--spacing-medium);
+}
+
+/* CONSISTENT PARAGRAPHS */
+
+p {
+    margin-bottom: var(--spacing-small);
+}
+
+/* PREVENT HORIZONTAL SCROLL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== Homepage layout fixes ===== */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+/* Navigation */
+.site-header,
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #2563eb;
+    color: white;
+    position: relative;
+}
+
+.logo,
+.nav-logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-toggle,
+#nav-toggle,
+#menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.nav-hamburger,
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #dbeafe;
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    background: transparent;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    flex: 0 1 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-image figcaption {
+    margin-top: 0.75rem;
+    color: #64748b;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #2563eb;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+    color: white;
+}
+
+/* Content sections */
+.intro-section,
+.interests-section,
+.contact-section {
+    padding: 3rem 2rem;
+}
+
+.container {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.interest-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 16px rgb(15 23 42 / 8%);
+}
+
+.site-footer {
+    padding: 2rem;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #bfdbfe;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .site-header,
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-hamburger,
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0.5rem 1rem;
+        background: #2563eb;
+    }
+
+    .nav-links li {
+        padding: 0.75rem 0;
+    }
+
+    #nav-toggle:checked ~ .nav-links,
+    #menu-toggle:checked ~ .nav-links,
+    .nav-toggle:checked ~ .main-nav .nav-links {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 1.25rem;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+    }
+
+    .hero-image img {
+        max-width: 220px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== Shared pages: About, Projects, Contact ===== */
+
+.page-hero {
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.page-hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.page-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.page-section {
+    width: min(1100px, 100% - 2rem);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.page-section h2 {
+    margin-bottom: 1rem;
+    color: #2563eb;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.page-section p {
+    line-height: 1.8;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+    gap: 1.5rem;
+}
+
+.page-card {
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 5px 18px rgb(15 23 42 / 7%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgb(15 23 42 / 12%);
+}
+
+.page-card h3 {
+    margin-top: 0;
+    color: #1d4ed8;
+}
+
+.page-card p {
+    color: #475569;
+}
+
+.page-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.page-button {
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.page-button:hover,
+.page-button:focus-visible {
+    background: #1d4ed8;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.contact-panel {
+    padding: 1.5rem;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 5px 18px rgb(15 23 42 / 7%);
+}
+
+.contact-panel label {
+    display: block;
+    margin: 1rem 0 0.4rem;
+    font-weight: 600;
+}
+
+.contact-panel input,
+.contact-panel textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contact-panel textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-panel input:focus,
+.contact-panel textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .page-section {
+        padding: 2rem 0;
+    }
+}
+
+/* Make navigation links visible on all pages */
+.main-nav .nav-links a,
+.nav-links a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main-nav .nav-links a:hover,
+.main-nav .nav-links a:focus-visible {
+    color: #fef08a;
+    text-decoration: underline;
+}
+
+/* Keep the navigation background blue */
+.site-header,
+.navbar {
+    background-color: #2563eb;
+}
+
+/* Make page headings clear */
+.page-hero h1 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.page-hero p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    color: red !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.nav-links li a {
+    display: inline-block;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 10px;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* =================================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+footer:not(.main-footer) {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* =================================
+   DAY 1 - BUTTON STYLES
+================================= */
+
+.button-section {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.button-section h2 {
+    margin-bottom: 30px;
+    color: #243b55;
+}
+
+.btn {
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Secondary Button */
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Danger Button */
+
+.btn-danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #991b1b;
+}
+
+/* Disabled Button */
+
+.btn-disabled {
+    background-color: #d1d5db;
+    color: #777;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-disabled:hover {
+    background-color: #d1d5db;
+    transform: none;
+}
+
+
+/* =================================
+   DAY 2 - CARD COMPONENT
+================================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    color: #243b55;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    margin-bottom: 18px;
+    color: #666;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background-color: #e0ecff;
+    color: #2563eb;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   DAY 3 - HERO SECTION
+================================= */
+
+.hero-section {
+    min-height: 100vh;
+    background-image: url("https://picsum.photos/id/1018/1920/1080");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 750px;
+}
+
+.hero-content h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: clamp(16px, 2vw, 21px);
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   DAY 4 - CONTACT FORM
+================================= */
+
+.form-container {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus State */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+/* Invalid State */
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc2626;
+    background-color: #fff5f5;
+}
+
+/* Valid State */
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+    border-color: #16a34a;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   DAY 5 - FOOTER DESIGN
+================================= */
+
+.footer-demo {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.main-footer {
+    background-color: #172b46;
+    color: white;
+    padding: 55px 8% 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-column h2,
+.footer-column h3 {
+    margin-bottom: 18px;
+    color: white;
+}
+
+.footer-column p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul a:hover {
+    color: #60a5fa;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #344b69;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #2563eb;
+    transform: translateY(-4px);
+}
+
+/* Copyright */
+
+.copyright {
+    border-top: 1px solid #42546b;
+    text-align: center;
+    padding: 22px 10px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .button-section {
+        padding: 25px 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-footer {
+        padding: 40px 7% 0;
+    }
+
+}
+
