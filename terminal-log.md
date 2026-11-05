@@ -86,3 +86,20 @@
     }
 
 }]
+
+## Task 5.4: Shell Script Basics
+
+### Script 1: Project Setup Script
+
+| Command | Description |
+|---|---|
+| `touch new-project.sh` | Created a new Bash script file. |
+| `code new-project.sh` | Opened the script for editing. |
+| `chmod +x new-project.sh` | Made the script executable. |
+| `bash ~/iyf-s12-week-03-gracewambui0432/new-project.sh my-awesome-app` | Executed the script to create a new project. |
+| `ls my-awesome-app` | Checked the generated project directories. |
+| `ls my-awesome-app/src` | Checked the source directory. |
+
+### Result
+
+The shell script executed successfully and created the my-awesome-app project with README.md, docs, tests and src directories.
