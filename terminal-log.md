@@ -26,3 +26,23 @@
 | `touch my-project/README.md` | Created the README file. |
 | `ls my-project` | Checked the main project folders and README. |
 | `ls my-project/src` | Checked the CSS, images and JavaScript folders. |
+
+## Task 5.2: File Operations
+
+### Exercise 1: Create and Edit Files
+
+| Command | Description |
+|---|---|
+| `touch index.html` | Created a new HTML file. |
+| `cat index.html` | Displayed the contents of index.html. |
+
+### Exercise 2: Working with Directories
+
+| Command | Description |
+|---|---|
+| `cp -r src/ src-backup/` | Copied the src directory and its contents. |
+| `mkdir archive` | Created an archive directory. |
+| `mv src-backup/ archive/` | Moved src-backup into archive. |
+| `mkdir empty-folder` | Created an empty directory. |
+| `rmdir empty-folder` | Removed the empty directory. |
+| `rm -r archive/` | Removed archive and its contents. |
