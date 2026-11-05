@@ -1868,3 +1868,7 @@ footer:not(.main-footer) {
 
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
