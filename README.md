@@ -49,3 +49,6 @@ One challenge was keeping the layout consistent across different screen sizes. I
 I also encountered styling conflicts caused by repeated selectors in my stylesheet. Reviewing and organizing the CSS helped me understand how the cascade and specificity affect the final appearance of a page.
 
 
+## Collaboration Practice
+
+This section was added while practising GitHub remote collaboration and repository cloning.
