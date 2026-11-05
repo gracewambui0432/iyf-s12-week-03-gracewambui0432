@@ -46,3 +46,43 @@
 | `mkdir empty-folder` | Created an empty directory. |
 | `rmdir empty-folder` | Removed the empty directory. |
 | `rm -r archive/` | Removed archive and its contents. |
+
+## Task 5.3: Useful Terminal Commands
+
+### Search and Find
+
+| Command | Description |
+|---|---|
+| `find . -name "*.html"` | Finds all HTML files in the project. |
+| `grep -rl "contact" .` | Searches for files containing the word contact. |
+| `history` | Displays previously executed terminal commands. |
+
+### View and Edit
+
+| Command | Description |
+|---|---|
+| `head -10 styles.css` | Displays the first 10 lines of the CSS file. |
+| `tail -10 styles.css` | Displays the last 10 lines of the CSS file. |
+| `wc styles.css` | Counts lines, words and characters in the CSS file. |
+| `wc -l styles.css` | Counts the lines in the CSS file. |
+| `history | tail -10` | Displays the last 10 terminal commands. |
+
+### Task Questions and Answers
+
+1. How many HTML files are in my portfolio project?
+   Answer: [8]
+
+2. Which files contain the word "contact"?
+   Answer: [about.html,styles.css,project.html,index.html,readme.md,git/index]
+
+3. How many lines is my CSS file?
+   Answer: [1870]
+
+4. What were my last 10 terminal commands?
+   Answer: [ }
+
+    .main-footer {
+        padding: 40px 7% 0;
+    }
+
+}]
