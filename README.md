@@ -45,55 +45,44 @@ iyf-s12-week-03-gracewambui0432/
 │   └── tests/
 └── README.md
 ```
-What I Learned
+## What I Learned
+
 Throughout Week 3, I learned how to:
 
-Navigate directories and manage files using terminal commands.
+- Navigate directories and manage files using terminal commands.
+- Create, copy, move, rename, and delete files and folders.
+- Search for files using `find` and `grep`.
+- Use commands such as `head`, `tail`, `wc`, and `history`.
+- Write Bash scripts to automate project setup.
+- Initialize Git repositories and track changes.
+- Stage, commit, and push changes to GitHub.
+- Create branches and merge feature work.
+- Identify and resolve Git merge conflicts.
+- Connect local repositories to GitHub and synchronize changes.
+- Write meaningful commit messages and maintain Git history.
 
-Create, copy, move, rename, and delete files and folders.
+## Future Improvements
 
-Search for files using find and grep.
+- [ ] Add JavaScript interactivity.
+- [ ] Implement dark mode.
+- [ ] Add project filtering.
+- [ ] Improve website accessibility.
+- [ ] Add more projects to my portfolio.
+- [ ] Improve the contact section.
 
-Use commands such as head, tail, wc, and history.
+## Challenges Faced
 
-Write Bash scripts to automate project setup.
-
-Initialize Git repositories and track changes.
-
-Stage, commit, and push changes to GitHub.
-
-Create branches and merge feature work.
-
-Identify and resolve Git merge conflicts.
-
-Connect local repositories to GitHub and synchronize changes.
-
-Write meaningful commit messages and maintain Git history.
-
-Future Improvements
-
-Add JavaScript interactivity.
-
-Implement dark mode.
-
-Add project filtering.
-
-Improve website accessibility.
-
-Add more projects to my portfolio.
-
-Improve the contact section.
-Challenges Faced
 One challenge I encountered was resolving Git merge conflicts when two branches modified the same file.
 
 I learned to compare conflicting changes, choose the appropriate content, remove conflict markers, and complete the merge.
 
 I also experienced Git push rejections when my local repository was behind GitHub. I learned to synchronize changes using Git pull before pushing again.
 
-Contact
-Name: Grace Wambui
+## Contact
 
-GitHub: @gracewambui0432 
+- **Name:** Grace Wambui
+- **GitHub:** [@gracewambui0432](https://github.com/gracewambui0432)
 
-License
+## License
+
 This project is created for educational purposes as part of the IYF learning program.
