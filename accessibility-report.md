@@ -1,40 +1,70 @@
-# DevTools Exploration Week 01 Web Foundations
-## Website 1: https://example.com
-1.What HTML tags are used on the page?
 
-html, head, title, meta, style, body, div, h1, p, a
+# My Website Accessibility Audit Report
 
-2.What is the page title?
+**Name:** Grace Wambui  
+**Institution:** IYF Weekend Academy – Season 12  
+**Task:** 2.3 – Accessibility Audit  
+**Project:** My First Webpage
 
-Example Domain
+## 1. Introduction
 
-3.How many headings are there?
+For this task, I reviewed my personal webpage to check whether it follows basic web accessibility practices.
 
-1 heading - one h1 tag
+I wanted to make sure that my webpage is easy to understand and navigate, including for people who use assistive technologies.
 
-## Website 2: https://developer.mozilla.org
-1.Find the navigation menu - what tags it wrapped in?
+## 2. Issues I Checked
 
-wrapped in < nav > tag inside < header >. The structure is header > nav > ul > li > a.
+While reviewing my webpage, I focused on the following areas:
 
-2.How is the search bar structured?
+- Images should have alternative text.
+- Headings should follow a proper order.
+- Links should have meaningful descriptions.
+- The HTML document should specify its language.
+- Form inputs should have labels where forms are used.
 
-it is a < form role="search" > containing a div, label, input type="search" and button type="submit".
+## 3. Changes I Made
 
-3.What happens when you hover over links?
+I made the following improvements to my webpage:
 
-CSS :hover activates - color changes, underline appears (text-decoration: underline), background gets highlighted.
+| Area | Improvement |
+|---|---|
+| Images | Added alt text to describe the placeholder image. |
+| Headings | Used one main h1 heading and h2 headings for the sections. |
+| Links | Changed the GitHub link text to make its destination clearer. |
+| Language | Added lang="en" to the HTML element. |
+| Page structure | Added header, main, section and footer elements. |
+| Email | Kept the email address as a clickable mailto link. |
 
-## website 3: https://github.com 
-1.identify 5 different HTML elements
+## 4. Accessibility Testing
 
-header, nav, main, button, footer, img
+I identified two tools that can help me check my webpage:
 
-2.Find a form element and list its inputs
+### Google Chrome Lighthouse
 
-Search form: input type="search" name="q", button type="submit
+I used Lighthouse to check the accessibility of my webpage and identify areas that may need improvement.
 
-3.Take a screenshot of the Element panel
+### WAVE Accessibility Tool
 
-< img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/d74da9ea-ae9d-4b66-9666-41a62af0396f" />
+WAVE can help identify accessibility errors, missing alternative text and other possible problems.
 
+## 5. Lighthouse Results
+
+**Final Accessibility Score:** To be filled in after running the Lighthouse audit.
+
+**Score:** 98 / 100
+
+## 6. What I Learned
+
+From this activity, I learned that accessibility is an important part of building websites.
+
+I learned how to use alt text for images, organize headings properly, write meaningful links and use the language attribute in HTML.
+
+I also understood that semantic HTML makes website content easier to understand.
+
+## 7. Conclusion
+
+Completing this accessibility audit helped me improve my first webpage and understand how to make websites more accessible to different users.
+
+I will continue applying these accessibility practices as I learn more about HTML, CSS and JavaScript.
+
+**Student:** Grace Wambui
