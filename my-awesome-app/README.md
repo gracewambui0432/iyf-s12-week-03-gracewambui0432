@@ -1,1 +1,1 @@
-# my-awesome-app
+# my-app
